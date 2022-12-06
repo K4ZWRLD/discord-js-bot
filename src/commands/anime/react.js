@@ -1,10 +1,10 @@
 const { EmbedBuilder, ApplicationCommandOptionType } = require("discord.js");
 const { getJson } = require("@helpers/HttpUtils");
 const { EMBED_COLORS } = require("@root/config");
-const NekosLife = require("nekos.life");
-const neko = new NekosLife();
+const Anime_Images = require("anime-images-api");
+const API = new Anime_Images();
 
-const choices = ["hug", "kiss", "cuddle", "feed", "pat", "poke", "slap", "smug", "tickle", "wink"];
+const choices = ["hug", "kiss", "slap", "punch", "wink", "pat", "cuddle", "waifu"];
 
 /**
  * @type {import("@structures/Command")}
@@ -61,9 +61,9 @@ const genReaction = async (category, user) => {
       imageUrl = response.data.link;
     }
 
-    // neko api
+    // images api
     else {
-      imageUrl = (await neko[category]()).url;
+      imageUrl = (await API[category]()).url;
     }
 
     return new EmbedBuilder()
