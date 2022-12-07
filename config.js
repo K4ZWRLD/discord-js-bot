@@ -1,6 +1,6 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
-  SUPPORT_SERVER: "", // Your bot support server
+  OWNER_IDS: 1011491610216894485, // Bot owner ID's
+  SUPPORT_SERVER: "https://discord.gg/gmc9sGuTc4", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
     DEFAULT_PREFIX: "!", // Default prefix for the bot
@@ -44,8 +44,8 @@ module.exports = {
 
   ECONOMY: {
     ENABLED: true,
-    CURRENCY: "₪",
-    DAILY_COINS: 100, // coins to be received by daily command
+    CURRENCY: "★",
+    DAILY_COINS: 150, // coins to be received by daily command
     MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
   },
