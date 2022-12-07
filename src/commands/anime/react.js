@@ -12,16 +12,16 @@ const choices = ["hug", "kiss", "slap", "punch", "wink", "pat", "cuddle", "waifu
 module.exports = {
   name: "react",
   description: "anime reactions",
-  enabled: true,
+  enabled: false,
   category: "ANIME",
   cooldown: 5,
   command: {
-    enabled: true,
+    enabled: false,
     minArgsCount: 1,
     usage: "[reaction]",
   },
   slashCommand: {
-    enabled: true,
+    enabled: false,
     options: [
       {
         name: "category",
