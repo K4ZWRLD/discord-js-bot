@@ -14,9 +14,9 @@ module.exports = {
   EMBED_COLORS: {
     BOT_EMBED: "#000000",
     TRANSPARENT: "#36393F",
-    SUCCESS: "#00A56A",
-    ERROR: "#D61A3C",
-    WARNING: "#F7E919",
+    SUCCESS: "#ffffff",
+    ERROR: "#bababa",
+    WARNING: "#bababa",
   },
   CACHE_SIZE: {
     GUILDS: 100,
@@ -70,9 +70,9 @@ module.exports = {
 
   GIVEAWAYS: {
     ENABLED: true,
-    REACTION: "🎁",
-    START_EMBED: "#FF468A",
-    END_EMBED: "#FF468A",
+    REACTION: "🕸️",
+    START_EMBED: "#FFFFFF",
+    END_EMBED: "#000000",
   },
 
   IMAGE: {
@@ -87,16 +87,16 @@ module.exports = {
   MODERATION: {
     ENABLED: true,
     EMBED_COLORS: {
-      TIMEOUT: "#102027",
-      UNTIMEOUT: "#4B636E",
-      KICK: "#FF7961",
-      SOFTBAN: "#AF4448",
-      BAN: "#D32F2F",
-      UNBAN: "#00C853",
-      VMUTE: "#102027",
-      VUNMUTE: "#4B636E",
-      DEAFEN: "#102027",
-      UNDEAFEN: "#4B636E",
+      TIMEOUT: "#4D0904",
+      UNTIMEOUT: "#0F4D04",
+      KICK: "#4D0904",
+      SOFTBAN: "#4D0904",
+      BAN: "#4D0904",
+      UNBAN: "#0F4D04",
+      VMUTE: "#4D0904",
+      VUNMUTE: "#0F4D04",
+      DEAFEN: "#4D0904",
+      UNDEAFEN: "#0F4D04",
       DISCONNECT: "RANDOM",
       MOVE: "RANDOM",
     },
@@ -112,7 +112,7 @@ module.exports = {
   STATS: {
     ENABLED: true,
     XP_COOLDOWN: 5, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**",
+    DEFAULT_LVL_UP_MSG: "{member:tag}, u just advanced to lvl **{level}**",
   },
 
   SUGGESTIONS: {
@@ -121,14 +121,14 @@ module.exports = {
       UP_VOTE: "⬆️",
       DOWN_VOTE: "⬇️",
     },
-    DEFAULT_EMBED: "#4F545C",
-    APPROVED_EMBED: "#43B581",
-    DENIED_EMBED: "#F04747",
+    DEFAULT_EMBED: "#000000",
+    APPROVED_EMBED: "#0F4D04",
+    DENIED_EMBED: "#4D0904",
   },
 
   TICKET: {
     ENABLED: true,
-    CREATE_EMBED: "#068ADD",
-    CLOSE_EMBED: "#068ADD",
+    CREATE_EMBED: "#36393f",
+    CLOSE_EMBED: "#000000",
   },
 };
