@@ -117,6 +117,13 @@ async function embedSetup(channel, member) {
             .setStyle(TextInputStyle.Short)
             .setRequired(false)
         ),
+        new ActionRowBuilder().addComponents(
+          new TextInputBuilder()
+            .setCustomId("image")
+            .setLabel("Embed Image")
+            .setStyle(TextInputStyle.Short)
+            .setRequired(false)
+        ),
       ],
     })
   );
@@ -137,18 +144,20 @@ async function embedSetup(channel, member) {
   const author = modal.fields.getTextInputValue("author");
   const description = modal.fields.getTextInputValue("description");
   const footer = modal.fields.getTextInputValue("footer");
+  const image = modal.fields.getTextInputValue("image");
 
   const embed = new EmbedBuilder();
   if (title) embed.setTitle(title);
   if (author) embed.setAuthor({ name: author });
   if (description) embed.setDescription(description);
   if (footer) embed.setFooter({ text: footer });
-
+ if (image) embed.setImage(image);
+  
   // add/remove field button
   const buttonRow = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId("EMBED_FIELD_ADD").setLabel("Add Field").setStyle(ButtonStyle.Success),
-    new ButtonBuilder().setCustomId("EMBED_FIELD_REM").setLabel("Remove Field").setStyle(ButtonStyle.Danger),
-    new ButtonBuilder().setCustomId("EMBED_FIELD_DONE").setLabel("Done").setStyle(ButtonStyle.Primary)
+    new ButtonBuilder().setCustomId("EMBED_FIELD_ADD").setLabel("Add Field").setStyle(ButtonStyle.Secondary),
+    new ButtonBuilder().setCustomId("EMBED_FIELD_REM").setLabel("Remove Field").setStyle(ButtonStyle.Secondary),
+    new ButtonBuilder().setCustomId("EMBED_FIELD_DONE").setLabel("Done").setStyle(ButtonStyle.Secondary)
   );
 
   await sentMsg.edit({
