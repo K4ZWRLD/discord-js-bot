@@ -71,7 +71,7 @@ module.exports = {
   GIVEAWAYS: {
     ENABLED: true,
     REACTION: "🕸️",
-    START_EMBED: "#FFFFFF",
+    START_EMBED: "#000000",
     END_EMBED: "#000000",
   },
 
