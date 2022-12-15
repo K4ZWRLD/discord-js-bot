@@ -28,13 +28,13 @@ module.exports = async (member, giveawayChannel, duration, prize, winners, host,
       prize,
       winnerCount: winners,
       hostedBy: host,
-      thumbnail: "https://i.imgur.com/DJuTuxs.png",
+      thumbnail: "https://media.discordapp.net/attachments/1040773632185598034/1053046998904873051/5afbb7bf7d3234cc72d725bb91225d8b.jpg?width=531&height=499",
       messages: {
         giveaway: "🎉 **GIVEAWAY** 🎉",
         giveawayEnded: "🎉 **GIVEAWAY ENDED** 🎉",
-        inviteToParticipate: "React to enter",
-        dropMessage: "Be the first to react to win!",
-        hostedBy: `\nHosted by: ${host.tag}`,
+        inviteToParticipate: "react to enter",
+        dropMessage: "be the first to react to win!",
+        hostedBy: `\nhosted by: ${host.tag}`,
       },
     };
 
