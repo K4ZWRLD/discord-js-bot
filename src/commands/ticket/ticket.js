@@ -272,7 +272,7 @@ module.exports = {
  */
 async function ticketModalSetup({ guild, channel, member }, targetChannel, settings) {
   const buttonRow = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId("ticket_btnSetup").setLabel("Setup Message").setStyle(ButtonStyle.Primary)
+    new ButtonBuilder().setCustomId("ticket_btnSetup").setLabel("Setup Message").setStyle(ButtonStyle.Secondary)
   );
 
   const sentMsg = await channel.safeSend({
