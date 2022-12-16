@@ -357,7 +357,7 @@ async function ticketModalSetup({ guild, channel, member }, targetChannel, setti
     .setFooter({ text: footer || "You can only have 1 open ticket at a time!" });
 
   const tktBtnRow = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setLabel("Open a ticket").setCustomId("TICKET_CREATE").setStyle(ButtonStyle.Success)
+    new ButtonBuilder().setLabel("Open a ticket").setCustomId("TICKET_CREATE").setStyle(ButtonStyle.secondary)
   );
 
   // save configuration
