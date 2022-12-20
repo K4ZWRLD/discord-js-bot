@@ -153,7 +153,7 @@ async function embedSetup(channel, member) {
   const description = modal.fields.getTextInputValue("description");
   const footer = modal.fields.getTextInputValue("footer");
   const color = modal.fields.getTextInputValue("color");
-  const color = modal.fields.getTextInputValue("image");
+  const image = modal.fields.getTextInputValue("image");
 
   if (!title && !author && !description && !footer)
     return sentMsg.edit({ content: "You can't send an empty embed!", components: [] });
