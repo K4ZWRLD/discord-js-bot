@@ -37,14 +37,14 @@ module.exports = {
 
   DASHBOARD: {
     enabled: true, // enable or disable dashboard
-    baseURL: "http://localhost:8080", // base url
-    failureURL: "http://localhost:8080", // failure redirect url
+    baseURL: "https://losr-production.up.railway.app/api/callback", // base url
+    failureURL: "https://losr-production.up.railway.app/api/callback", // failure redirect url
     port: "8080", // port to run the bot on
   },
 
   ECONOMY: {
     ENABLED: true,
-    CURRENCY: "₪",
+    CURRENCY: "★",
     DAILY_COINS: 150, // coins to be received by daily command
     MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
