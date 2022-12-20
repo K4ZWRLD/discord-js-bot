@@ -1,9 +1,9 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
-  SUPPORT_SERVER: "", // Your bot support server
+  OWNER_IDS: [1011491610216894485], // Bot owner ID's
+  SUPPORT_SERVER: "https://discord.gg/QkDe9CWJ", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
-    DEFAULT_PREFIX: "!", // Default prefix for the bot
+    DEFAULT_PREFIX: ":", // Default prefix for the bot
   },
   INTERACTIONS: {
     SLASH: true, // Should the interactions be enabled
@@ -59,11 +59,11 @@ module.exports = {
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
       {
-        host: "localhost",
-        port: 2333,
-        password: "youshallnotpass",
-        id: "Local Node",
-        secure: false,
+        host: "lavalink.luneocloud.com",
+        port: 443,
+        password: "B25.Xaa+C4y",
+        id: "#1",
+        secure: true,
       },
     ],
   },
