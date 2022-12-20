@@ -6,17 +6,17 @@ module.exports = {
     DEFAULT_PREFIX: "!", // Default prefix for the bot
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
-    CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
+    SLASH: true, // Should the interactions be enabled
+    CONTEXT: true, // Should contexts be enabled
+    GLOBAL: true, // Should the interactions be registered globally
     TEST_GUILD_ID: "xxxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   EMBED_COLORS: {
-    BOT_EMBED: "#068ADD",
+    BOT_EMBED: "#36393f",
     TRANSPARENT: "#36393F",
-    SUCCESS: "#00A56A",
-    ERROR: "#D61A3C",
-    WARNING: "#F7E919",
+    SUCCESS: "#36393f",
+    ERROR: "#ffffff",
+    WARNING: "#ffffff",
   },
   CACHE_SIZE: {
     GUILDS: 100,
@@ -30,28 +30,28 @@ module.exports = {
   // PLUGINS
 
   AUTOMOD: {
-    ENABLED: false,
+    ENABLED: true,
     LOG_EMBED: "#36393F",
     DM_EMBED: "#36393F",
   },
 
   DASHBOARD: {
-    enabled: false, // enable or disable dashboard
+    enabled: true, // enable or disable dashboard
     baseURL: "http://localhost:8080", // base url
     failureURL: "http://localhost:8080", // failure redirect url
     port: "8080", // port to run the bot on
   },
 
   ECONOMY: {
-    ENABLED: false,
+    ENABLED: true,
     CURRENCY: "₪",
-    DAILY_COINS: 100, // coins to be received by daily command
+    DAILY_COINS: 150, // coins to be received by daily command
     MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
   },
 
   MUSIC: {
-    ENABLED: false,
+    ENABLED: true,
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
     DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
@@ -69,66 +69,66 @@ module.exports = {
   },
 
   GIVEAWAYS: {
-    ENABLED: false,
+    ENABLED: true,
     REACTION: "🎁",
-    START_EMBED: "#FF468A",
-    END_EMBED: "#FF468A",
+    START_EMBED: "#36393f",
+    END_EMBED: "#FFFFFF",
   },
 
   IMAGE: {
-    ENABLED: false,
+    ENABLED: true,
     BASE_API: "https://strangeapi.fun/api",
   },
 
   INVITE: {
-    ENABLED: false,
+    ENABLED: true,
   },
 
   MODERATION: {
-    ENABLED: false,
+    ENABLED: true,
     EMBED_COLORS: {
-      TIMEOUT: "#102027",
-      UNTIMEOUT: "#4B636E",
-      KICK: "#FF7961",
-      SOFTBAN: "#AF4448",
-      BAN: "#D32F2F",
-      UNBAN: "#00C853",
-      VMUTE: "#102027",
-      VUNMUTE: "#4B636E",
-      DEAFEN: "#102027",
-      UNDEAFEN: "#4B636E",
+      TIMEOUT: "#FFFFFF",
+      UNTIMEOUT: "#36393f",
+      KICK: "#36393f",
+      SOFTBAN: "#36393f",
+      BAN: "#36393f",
+      UNBAN: "#36393f",
+      VMUTE: "#36393f",
+      VUNMUTE: "#36393f",
+      DEAFEN: "#36393f",
+      UNDEAFEN: "#36393f",
       DISCONNECT: "RANDOM",
       MOVE: "RANDOM",
     },
   },
 
   PRESENCE: {
-    ENABLED: false, // Whether or not the bot should update its status
-    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
+    ENABLED: true, // Whether or not the bot should update its status
+    STATUS: "dnd", // The bot's status [online, idle, dnd, invisible]
     TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
     MESSAGE: "{members} members in {servers} servers", // Your bot status message
   },
 
   STATS: {
-    ENABLED: false,
+    ENABLED: true,
     XP_COOLDOWN: 5, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**",
+    DEFAULT_LVL_UP_MSG: "congrats {member:tag}, u just advanced to **lvl {level}**",
   },
 
   SUGGESTIONS: {
-    ENABLED: false, // Should the suggestion system be enabled
+    ENABLED: true, // Should the suggestion system be enabled
     EMOJI: {
       UP_VOTE: "⬆️",
       DOWN_VOTE: "⬇️",
     },
-    DEFAULT_EMBED: "#4F545C",
-    APPROVED_EMBED: "#43B581",
-    DENIED_EMBED: "#F04747",
+    DEFAULT_EMBED: "#36393f",
+    APPROVED_EMBED: "#FFFFFF",
+    DENIED_EMBED: "#000000",
   },
 
   TICKET: {
-    ENABLED: false,
-    CREATE_EMBED: "#068ADD",
-    CLOSE_EMBED: "#068ADD",
+    ENABLED: true,
+    CREATE_EMBED: "#36393f",
+    CLOSE_EMBED: "#36393f",
   },
 };
