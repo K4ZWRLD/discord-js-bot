@@ -16,7 +16,7 @@ module.exports = {
   category: "ANIME",
   cooldown: 5,
   command: {
-    enabled: true,
+    enabled:false,
     minArgsCount: 1,
     usage: "[reaction]",
   },
