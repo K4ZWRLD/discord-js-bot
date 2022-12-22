@@ -125,6 +125,13 @@ async function embedSetup(channel, member) {
             .setStyle(TextInputStyle.Short)
             .setRequired(false)
         ),
+        new ActionRowBuilder().addComponents(
+          new TextInputBuilder()
+            .setCustomId("image")
+            .setLabel("Embed Image")
+            .setStyle(TextInputStyle.Short)
+            .setRequired(false)
+        ),
       ],
     })
   );
@@ -146,8 +153,9 @@ async function embedSetup(channel, member) {
   const description = modal.fields.getTextInputValue("description");
   const footer = modal.fields.getTextInputValue("footer");
   const color = modal.fields.getTextInputValue("color");
-
-  if (!title && !author && !description && !footer)
+  const image = modal.fields.getTextInputValue("image");
+  
+  if (!title && !author && !description && !footer && !image)
     return sentMsg.edit({ content: "You can't send an empty embed!", components: [] });
 
   const embed = new EmbedBuilder();
@@ -156,6 +164,7 @@ async function embedSetup(channel, member) {
   if (description) embed.setDescription(description);
   if (footer) embed.setFooter({ text: footer });
   if ((color && isValidColor(color)) || (color && isHex(color))) embed.setColor(color);
+  if (image) embed.setImage({ text: image });
 
   // add/remove field button
   const buttonRow = new ActionRowBuilder().addComponents(
