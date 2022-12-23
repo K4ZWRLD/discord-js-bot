@@ -128,8 +128,8 @@ async function embedSetup(channel, member) {
         new ActionRowBuilder().addComponents(
           new TextInputBuilder()
             .setCustomId("image")
-            .setLabel("Embed Image")
-            .setStyle(TextInputStyle.Short)
+            .setLabel("Image URL")
+            .setStyle(TextInputStyle.Paragraph)
             .setRequired(false)
         ),
       ],
@@ -164,7 +164,7 @@ async function embedSetup(channel, member) {
   if (description) embed.setDescription(description);
   if (footer) embed.setFooter({ text: footer });
   if ((color && isValidColor(color)) || (color && isHex(color))) embed.setColor(color);
-  if (image) embed.setImage({ text: image });
+  if (image) embed.setImage(image);
 
   // add/remove field button
   const buttonRow = new ActionRowBuilder().addComponents(
