@@ -1,5 +1,5 @@
 module.exports = {
-  OWNER_IDS: [1011491610216894485], // Bot owner ID's
+  OWNER_IDS: "1011491610216894485", // Bot owner ID's
   SUPPORT_SERVER: "https://discord.gg/QkDe9CWJ", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
